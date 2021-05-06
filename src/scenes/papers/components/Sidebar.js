@@ -11,9 +11,9 @@ export default class PapersSidebar extends Component {
         return this.props.getChosenTab() === PanelTabs.PAPER_SEARCH;
     }
 
-    isJargonActive() {
-        return this.props.getChosenTab() === PanelTabs.JARGON_SEARCH;
-    }
+    // isJargonActive() {
+    //     return this.props.getChosenTab() === PanelTabs.JARGON_SEARCH;
+    // }
 
     render() {
         const { setJargonTab, setSearchTab } = this.props;
@@ -27,13 +27,13 @@ export default class PapersSidebar extends Component {
                 >
                     <Icon circular inverted color="blue" name="search" />
                 </Menu.Item>
-                <Menu.Item
-                    name="jargon"
-                    active={this.isJargonActive()}
-                    onClick={setJargonTab}
-                >
-                    <Icon circular inverted color="blue" name="comment" />
-                </Menu.Item>
+                {/*<Menu.Item*/}
+                {/*    name="jargon"*/}
+                {/*    active={this.isJargonActive()}*/}
+                {/*    onClick={setJargonTab}*/}
+                {/*>*/}
+                {/*    <Icon circular inverted color="blue" name="comment" />*/}
+                {/*</Menu.Item>*/}
             </Menu>
         );
     }
